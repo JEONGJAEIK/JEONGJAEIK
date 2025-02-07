@@ -5,9 +5,15 @@
 
 <br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JEONGJAEIK&layout=normal&theme=apprentice"/>
-
+![<Top Lang](https://github-readme-stats.vercel.app/api/top-langs/?username=JEONGJAEIK&layout=normal&theme=apprentice)
 ![JAEIK's GitHub stats](https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true&theme=radical)
 
-
 <br>
+
+<h2 align="center"> Tech Stack </h2>
+<p align="center">
+  <img height=27em src="https://img.shields.io/badge/Java-F80000?style=flat&logo=Oracle&logoColor=white"/></a>&nbsp
+  <img height=27em src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/></a>&nbsp
+  <img height=27em src="https://img.shields.io/badge/Spring-6DB33F?style=flat&logo=Springboot&logoColor=white"/></a>&nbsp
+  <img height=27em src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white"/></a>
+</p>
