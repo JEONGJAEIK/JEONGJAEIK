@@ -5,4 +5,4 @@
 
 <br>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true)
+!![GitHub Stats](https://github-readme-stats.vercel.app/api?username=jeongjaeik&show_icons=true&theme=radical)
