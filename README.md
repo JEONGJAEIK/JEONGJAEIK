@@ -5,3 +5,4 @@
 
 <br>
 
+[![Contributors](https://img.shields.io/github/contributors/hibernate/hibernate-orm)](https://github.com/hibernate/hibernate-orm/graphs/contributors)
