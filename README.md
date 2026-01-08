@@ -5,4 +5,4 @@
 
 <br>
 
-[![Contributors](https://img.shields.io/github/contributors/hibernate/hibernate-orm)](https://github.com/hibernate/hibernate-orm/graphs/contributors)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true)
