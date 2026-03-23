@@ -16,6 +16,7 @@
 <br>
 
 ### GitHub Stats & Algorithm
+
 <a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" /></a>
 <a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JEONGJAEIK&layout=compact&theme=tokyonight&hide_border=true" height="170" /></a>
 <a href="https://solved.ac/wodlr1207"><img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wodlr1207" height="170" /></a>
@@ -23,7 +24,7 @@
 ---
 <br>
 
-### 🛠 Tech Stack
+### Tech Stack
 
 **Backend**
 
