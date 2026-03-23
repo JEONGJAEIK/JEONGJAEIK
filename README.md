@@ -10,7 +10,7 @@
 <br>
 
 [![Blog](https://img.shields.io/badge/Tech%20Blog-jaeiktech.tistory.com-FF5722?style=for-the-badge&logo=tistory&logoColor=white)](https://jaeiktech.tistory.com)
-[![Gmail](https://img.shields.io/badge/Gmail-jaeik.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wodlr1207@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-wodlr1207@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:wodlr1207@gmail.com)
 
 <br>
 
