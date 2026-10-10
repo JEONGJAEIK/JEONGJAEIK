@@ -5,8 +5,6 @@
 
 ### 안녕하세요, 웹 백엔드 개발자 정재익입니다
 
-**문제의 근본 원인을 집요하게 추적하여 해결하는 것을 좋아합니다.**
-
 <br>
 
 [![Blog](https://img.shields.io/badge/Tech%20Blog-jaeiktech.tistory.com-FF5722?style=for-the-badge&logo=tistory&logoColor=white)](https://jaeiktech.tistory.com)
