@@ -1,9 +1,8 @@
+<p>
+<img src="assets/hero.svg" alt="Jaeik Jeong, backend developer. 고친 라이브러리 코드: Hibernate ORM #11468 머지, Spring Data Redis #3347 머지, Prisma #5868 리뷰 중" width="100%">
+</p>
+
 <div align="center">
-
-![header](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=230&section=header&text=Jaeik%20Jeong&fontAlign=50&fontAlignY=35&fontSize=50&fontColor=ffffff&desc=Backend%20Developer&descAlignY=55&descAlign=50&animation=fadeIn)
-<br>
-
-### 안녕하세요, 백엔드 개발자 정재익입니다
 
 Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 지금은 AI 에이전트 플랫폼의 인증과 외부 서비스 연동 권한 같은 서버 기반을 맡고 있습니다.
@@ -32,22 +31,14 @@ Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 <table>
   <tr>
     <td align="center" width="50%">
-      <a href="https://github.com/BimilLog/BimilLog">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=BimilLog&repo=BimilLog&theme=tokyonight&hide_border=true" />
-      </a>
+      <img src="assets/bimillog.svg" alt="BimilLog: 익명 롤링페이퍼 커뮤니티 서비스, 1인 개발, 2025.04 – 2026.05" width="100%">
       <br>
-      <b>비밀로그</b> — 익명 롤링페이퍼 커뮤니티 서비스
-      <br>
-      <sub>Java · Spring Boot · JPA · QueryDSL · MySQL · Redis | 2025.04 ~ 2026.05 1인 개발</sub>
+      <a href="https://github.com/BimilLog/BimilLog">BimilLog/BimilLog</a>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/JEONGJAEIK/MiniSpring">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=JEONGJAEIK&repo=MiniSpring&theme=tokyonight&hide_border=true" />
-      </a>
+      <img src="assets/minispring.svg" alt="MiniSpring: 순수 Java로 Spring의 핵심 동작을 직접 구현" width="100%">
       <br>
-      <b>MiniSpring</b> — 순수 Java로 Spring의 핵심 동작을 직접 구현
-      <br>
-      <sub>컴포넌트 스캔 · 생성자 주입 · 트랜잭션 프록시 · 이벤트 리스너</sub>
+      <a href="https://github.com/JEONGJAEIK/MiniSpring">JEONGJAEIK/MiniSpring</a>
     </td>
   </tr>
 </table>
@@ -56,12 +47,14 @@ Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 
 **비밀로그 성능 개선**
 
-| 주제 | 요약 | 링크 |
-|:---:|:---|:---:|
-| **Redis 간헐 타임아웃 추적** | 커넥션 풀 없이 쓰던 파이프라인이 요청마다 TCP 연결을 맺고 끊어 Netty 이벤트 루프의 작업 큐가 밀린 것을 찾고, 커넥션 풀 설정과 캐시 구조 변경으로 게시판 조회 P99 11,802ms → 575ms | [Blog](https://jaeiktech.tistory.com/224) |
-| **Redis 장애 대응 서킷 브레이커** | Redis 장애 때 로컬 캐시로 넘겨 장애 중 실시간 인기글 P99 6,034ms → 102ms, 정상 때 결과와의 유사도 20% → 93% | [Blog](https://jaeiktech.tistory.com/188) |
-| **게시글 목록 조회 개선** | 커서 페이지네이션, 비정규화, Redis 캐시로 200ms 이내 응답 처리량 73.1 → 898.0 TPS | [Blog](https://jaeiktech.tistory.com/196) |
-| **부하 테스트 오류 원인 추적** | Connection Refused를 OS 소켓 큐(파일 디스크립터, accept backlog)와 DB 커넥션 상한에서 찾아 조정하고, N+1 제거와 푸시 비동기화를 함께 적용해 최대 동시 사용자 416 → 1,000명, 오류율 50% → 0.1% | [Blog](https://jaeiktech.tistory.com/45) |
+<img src="assets/perf.svg" alt="비밀로그 성능 개선 전후: 게시판 조회 P99 11,802ms → 575ms, Redis 장애 중 인기글 P99 6,034ms → 102ms, 200ms 내 처리량 73.1 → 898.0 TPS, 최대 동시 사용자 416 → 1,000명" width="100%">
+
+| 원인과 조치 | 링크 |
+|:---|:---:|
+| **게시판 조회 P99**: 커넥션 풀 없이 쓰던 파이프라인이 요청마다 TCP 연결을 맺고 끊어 Netty 이벤트 루프의 작업 큐가 밀린 것을 찾고, 커넥션 풀 설정과 캐시 구조 변경 | [Blog](https://jaeiktech.tistory.com/224) |
+| **Redis 장애 중 인기글 P99**: Redis 장애 때 로컬 캐시로 넘기는 서킷 브레이커, 정상 때 결과와의 유사도 20% → 93% | [Blog](https://jaeiktech.tistory.com/188) |
+| **글 목록 처리량**: 커서 페이지네이션, 비정규화, Redis 캐시 | [Blog](https://jaeiktech.tistory.com/196) |
+| **최대 동시 사용자**: Connection Refused를 OS 소켓 큐(파일 디스크립터, accept backlog)와 DB 커넥션 상한에서 찾아 조정하고, N+1 제거와 푸시 비동기화를 함께 적용 | [Blog](https://jaeiktech.tistory.com/45) |
 
 ---
 <br>
@@ -77,7 +70,7 @@ Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 **Framework**
 
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![JPA/Hibernate](https://img.shields.io/badge/JPA/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
 ![QueryDSL](https://img.shields.io/badge/QueryDSL-0769AD?style=for-the-badge)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
@@ -103,9 +96,9 @@ Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 
 ### GitHub Stats & Algorithm
 
-<a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" /></a>
-<a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JEONGJAEIK&layout=compact&theme=tokyonight&hide_border=true&hide=html,css" height="170" /></a>
-<a href="https://solved.ac/wodlr1207"><img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=wodlr1207" height="170" /></a>
+<a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api?username=JEONGJAEIK&show_icons=true&count_private=true&disable_animations=true&bg_color=1e1f22&title_color=548af7&text_color=dfe1e5&icon_color=8d939b&ring_color=548af7&border_color=393b40&border_radius=10" height="170" /></a>
+<a href="https://github.com/JEONGJAEIK"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JEONGJAEIK&layout=compact&hide=html,css&disable_animations=true&bg_color=1e1f22&title_color=548af7&text_color=dfe1e5&icon_color=8d939b&ring_color=548af7&border_color=393b40&border_radius=10" height="170" /></a>
+<a href="https://solved.ac/wodlr1207"><img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=wodlr1207" height="170" /></a>
 
 ---
 <br>
@@ -116,7 +109,5 @@ Java, Kotlin과 Spring으로 서버를 만들어 왔고,<br>
 정보처리기사, 전자계산기기사, 전자계산기조직응용기사
 
 <br>
-
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=120&section=footer)
 
 </div>

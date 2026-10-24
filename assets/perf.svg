@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="384" viewBox="0 0 880 384" role="img" aria-labelledby="pt pd">
+<title id="pt">비밀로그 성능 개선 전후</title>
+<desc id="pd">게시판 조회 P99 11,802ms에서 575ms, Redis 장애 중 인기글 P99 6,034ms에서 102ms, 200ms 내 처리량 73.1에서 898.0 TPS, 최대 동시 사용자 416명에서 1,000명.</desc>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR','Segoe UI',Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums;}</style>
+<rect x="0.5" y="0.5" width="879" height="383" rx="10" fill="#1e1f22" stroke="#393b40"/>
+<g transform="translate(36,36)">
+<circle cx="608" cy="18" r="5" fill="#256abf"/>
+<text x="620" y="23" font-size="13" fill="#8d939b">개선 전</text>
+<circle cx="698" cy="18" r="5" fill="#86b6ef"/>
+<text x="710" y="23" font-size="13" fill="#8d939b">개선 후</text>
+<text x="0" y="78" font-size="15" font-weight="600" fill="#dfe1e5">게시판 조회 P99</text>
+<text x="0" y="97" font-size="12" fill="#8d939b">ms, 낮을수록 좋음</text>
+<line x1="300" y1="82" x2="748" y2="82" stroke="#393b40" stroke-width="1"/>
+<line x1="321.8" y1="82" x2="748.0" y2="82" stroke="#256abf" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+<circle cx="748.0" cy="82" r="7" fill="#256abf" stroke="#1e1f22" stroke-width="2"/>
+<circle cx="321.8" cy="82" r="7" fill="#86b6ef" stroke="#1e1f22" stroke-width="2"/>
+<text x="748.0" y="68" font-size="13" fill="#8d939b" text-anchor="middle">11,802ms</text>
+<text x="321.8" y="68" font-size="13" font-weight="700" fill="#dfe1e5" text-anchor="middle">575ms</text>
+<text x="0" y="144" font-size="15" font-weight="600" fill="#dfe1e5">Redis 장애 중 인기글 P99</text>
+<text x="0" y="163" font-size="12" fill="#8d939b">ms, 낮을수록 좋음</text>
+<line x1="300" y1="148" x2="748" y2="148" stroke="#393b40" stroke-width="1"/>
+<line x1="307.6" y1="148" x2="748.0" y2="148" stroke="#256abf" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+<circle cx="748.0" cy="148" r="7" fill="#256abf" stroke="#1e1f22" stroke-width="2"/>
+<circle cx="307.6" cy="148" r="7" fill="#86b6ef" stroke="#1e1f22" stroke-width="2"/>
+<text x="748.0" y="134" font-size="13" fill="#8d939b" text-anchor="middle">6,034ms</text>
+<text x="307.6" y="134" font-size="13" font-weight="700" fill="#dfe1e5" text-anchor="middle">102ms</text>
+<text x="0" y="210" font-size="15" font-weight="600" fill="#dfe1e5">글 목록 200ms 내 처리량</text>
+<text x="0" y="229" font-size="12" fill="#8d939b">TPS, 높을수록 좋음</text>
+<line x1="300" y1="214" x2="748" y2="214" stroke="#393b40" stroke-width="1"/>
+<line x1="336.5" y1="214" x2="748.0" y2="214" stroke="#256abf" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+<circle cx="336.5" cy="214" r="7" fill="#256abf" stroke="#1e1f22" stroke-width="2"/>
+<circle cx="748.0" cy="214" r="7" fill="#86b6ef" stroke="#1e1f22" stroke-width="2"/>
+<text x="336.5" y="200" font-size="13" fill="#8d939b" text-anchor="middle">73.1</text>
+<text x="748.0" y="200" font-size="13" font-weight="700" fill="#dfe1e5" text-anchor="middle">898.0</text>
+<text x="0" y="276" font-size="15" font-weight="600" fill="#dfe1e5">최대 동시 사용자</text>
+<text x="0" y="295" font-size="12" fill="#8d939b">명, 높을수록 좋음</text>
+<line x1="300" y1="280" x2="748" y2="280" stroke="#393b40" stroke-width="1"/>
+<line x1="486.4" y1="280" x2="748.0" y2="280" stroke="#256abf" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+<circle cx="486.4" cy="280" r="7" fill="#256abf" stroke="#1e1f22" stroke-width="2"/>
+<circle cx="748.0" cy="280" r="7" fill="#86b6ef" stroke="#1e1f22" stroke-width="2"/>
+<text x="486.4" y="266" font-size="13" fill="#8d939b" text-anchor="middle">416명</text>
+<text x="748.0" y="266" font-size="13" font-weight="700" fill="#dfe1e5" text-anchor="middle">1,000명</text>
+</g>
+</svg>
